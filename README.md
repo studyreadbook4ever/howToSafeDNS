@@ -1,4 +1,4 @@
-[howToSafeDNS 사이트 바로가기](https://studyreadbook4ever.github.io/)
+[howToSafeDNS 사이트 바로가기](https://studyreadbook4ever.github.io/howToSafeDNS)
 
 DNS(Domain Name Service)란, 우리가 인터넷에서 웹사이트에 접속할 때 그 웹사이트 이름을 넣으면 시스템에서 도메인 이름에 대응하는 ip주소를 알려줌으로써 인터넷을 사용하는 사람들이 자연스럽게 ip주소를 안 외워도 특정 ip로 접근할 수 있는 기능이다.
 
