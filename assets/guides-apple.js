@@ -83,6 +83,8 @@ function iosMode(protocol) {
       {
         title: '설정에서 다운로드한 프로필을 열어요',
         body: '설정 앱으로 이동해 “프로필이 다운로드됨”을 누르세요. 보이지 않으면 설정 → 일반 → VPN 및 기기 관리에서 다운로드한 프로필을 찾으세요.',
+        fileHelp: 'Safari가 파일로 다운로드했다면 파일 앱 → 다운로드에서 .mobileconfig 파일을 눌러 프로필을 여세요. XML 내용만 보이면 파일을 길게 눌러 “다음으로 열기”에서 “빠른 보기로 미리보기” 선택을 해제한 뒤 다시 여세요.',
+        fileHelpSource: 'https://mullvad.net/en/help/dns-over-https-and-dns-over-tls#ios-ipados',
         note: '다운로드한 뒤 8분 안에 설치하지 않으면 다시 다운로드해야 합니다. 설치를 막는 메시지가 나오면 Apple의 공식 설치 안내를 확인하세요.',
       },
       {
