@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>2CB4C8D4-7A52-5791-8935-A6DCE0551AFB</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Google Public DNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>このファイルには、DNS設定が1つだけ含まれています。ルート証明書、VPN、デバイス管理への登録、アプリのインストール項目はありません。GitHubでXMLの内容を確認できます。
+
+プロファイルは署名されていません。「未署名」は配布者の署名がないという意味であり、DNS接続のTLS暗号化とは別のものです。インストール画面の名前とDNSアドレスを確認してから判断してください。
+
+一般的な問い合わせ・悪意のあるサイトをブロックするサービスではありません
+
+DNSで収集した個人情報を広告ターゲティングに使用しないとしています。IPアドレスと問い合わせを含む一時ログは通常24–48時間保持され、セキュリティ・不正利用への対応の例外や、個人を識別できない長期ログがあります。
+
+プライバシーポリシー: https://developers.google.com/speed/public-dns/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>FA97B02D-4ED5-5839-8171-CE59A2DDB645</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Google Public DNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>8.8.8.8</string>
+					<string>8.8.4.4</string>
+					<string>2001:4860:4860::8888</string>
+					<string>2001:4860:4860::8844</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://dns.google/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

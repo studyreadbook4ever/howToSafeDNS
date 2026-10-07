@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>EFB4EF92-B4FC-5599-B36F-786F3EE7C788</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · CleanBrowsing · DoT</string>
+	<key>PayloadDescription</key>
+	<string>这个文件只有一项 DNS 设置，不包含根证书、VPN、设备管理注册或应用安装项。可以在 GitHub 查看 XML 原文。
+
+描述文件未签名。“未签名”表示没有发布者签名，与 DNS 连接的 TLS 加密是两回事。请检查安装界面的名称和 DNS 地址后再决定是否安装。
+
+免费 Security 过滤器会拦截钓鱼、垃圾信息和恶意域名。它不是成人内容过滤器，正常网站也可能被误拦截。
+
+CleanBrowsing 明确表示其免费 DNS 不记录或保存 IP 等可将查询关联到个人的身份信息。但会处理匿名汇总的 DNS 数据以运营服务。
+
+隐私政策: https://cleanbrowsing.org/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>9F9114F1-D9C5-549B-8060-342C1CB1C211</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · CleanBrowsing · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>185.228.168.9</string>
+					<string>185.228.169.9</string>
+					<string>2a0d:2a00:1::2</string>
+					<string>2a0d:2a00:2::2</string>
+				</array>
+				<key>ServerName</key>
+				<string>security-filter-dns.cleanbrowsing.org</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

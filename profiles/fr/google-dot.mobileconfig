@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>77436B07-7BCA-5CF0-81BD-F84EA4E6B47C</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Google Public DNS · DoT</string>
+	<key>PayloadDescription</key>
+	<string>Ce fichier contient un seul réglage DNS. Il ne contient ni certificat racine, ni VPN, ni inscription à la gestion de l’appareil, ni installation d’application. Vous pouvez consulter le XML original sur GitHub.
+
+Le profil n’est pas signé. « Non signé » signifie qu’il ne porte pas la signature du distributeur ; cela est distinct du chiffrement TLS de la connexion DNS. Vérifiez le nom et l’adresse DNS sur l’écran d’installation avant de décider.
+
+Résolution classique · Ce n’est pas un service de blocage des sites malveillants
+
+Le fournisseur déclare ne pas utiliser les données personnelles collectées par le DNS pour le ciblage publicitaire. Les journaux temporaires, qui comprennent les IP et les requêtes, sont généralement conservés 24 à 48 heures. Il existe des exceptions pour la sécurité et la lutte contre les abus, ainsi que des journaux à long terme dépourvus d’identifiants personnels.
+
+Politique de confidentialité: https://developers.google.com/speed/public-dns/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>EB35E1B6-B583-5888-96D2-D93D5E2E0128</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Google Public DNS · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>8.8.8.8</string>
+					<string>8.8.4.4</string>
+					<string>2001:4860:4860::8888</string>
+					<string>2001:4860:4860::8844</string>
+				</array>
+				<key>ServerName</key>
+				<string>dns.google</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

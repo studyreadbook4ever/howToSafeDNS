@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>76E0FAEE-B9FD-595E-8F5E-9BF775950A2A</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · DNS4EU · DoH</string>
+	<key>PayloadDescription</key>
+	<string>This file contains a single DNS configuration only. It does not include a root certificate, VPN, device management enrollment or app installation. You can inspect the XML source on GitHub.
+
+The profile is unsigned. “Unsigned” means it has no distributor signature; this is separate from the DNS connection's TLS encryption. Check the name and DNS addresses on the installation screen before deciding to install.
+
+A free protective DNS service for individual users in Europe. It blocks malicious, phishing, command-and-control and court-ordered domains. In Korea, check connectivity and latency.
+
+DNS4EU states that client IP addresses are fully anonymized before logging, and queries are not sold, profiled or used for advertising targeting. This does not mean that no logs exist.
+
+Privacy policy: https://legal-documents-dns4eu.s3.fr-par.scw.cloud/DNS4EU-Public-DNS-Resolver-policy-2025.pdf</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>158E690C-C900-52C8-873E-76B3C5C19128</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · DNS4EU · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>86.54.11.1</string>
+					<string>86.54.11.201</string>
+					<string>2a13:1001::86:54:11:1</string>
+					<string>2a13:1001::86:54:11:201</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://protective.joindns4.eu/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

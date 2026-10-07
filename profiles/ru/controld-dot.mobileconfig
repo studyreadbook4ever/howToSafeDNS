@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>27BF144F-6B89-5CB5-9E31-0CB058919C06</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Control D · DoT</string>
+	<key>PayloadDescription</key>
+	<string>В файле есть только одна конфигурация DNS. Он не содержит корневых сертификатов, VPN, регистрации управления устройством или установки приложений. Исходный XML можно посмотреть на GitHub.
+
+Профиль не подписан. «Не подписан» означает отсутствие подписи распространителя; это не связано с TLS-шифрованием DNS-соединения. Прежде чем устанавливать, проверьте имя и DNS-адреса на экране установки.
+
+Бесплатный фильтр вредоносных доменов. IP-адреса ниже предназначены для шифрованных соединений и отличаются от адресов DNS без шифрования. Безопасные домены тоже могут блокироваться ошибочно.
+
+В документации бесплатного DNS Control D заявлено, что индивидуальная история посещений, временные метки и журналы запросов не сохраняются. Для платных аккаунтов и сайта действуют отдельные политики конфиденциальности.
+
+Политика конфиденциальности: https://controld.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>3BE1CE09-F547-5900-B00F-8BE82DA971BD</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Control D · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>76.76.2.11</string>
+					<string>76.76.10.11</string>
+					<string>2606:1a40::11</string>
+					<string>2606:1a40:1::11</string>
+				</array>
+				<key>ServerName</key>
+				<string>p1.freedns.controld.com</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

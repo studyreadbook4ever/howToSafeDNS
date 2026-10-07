@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>B3D4CBB0-0045-5816-877B-302996E1AF33</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · LibreDNS · DoT</string>
+	<key>PayloadDescription</key>
+	<string>This file contains a single DNS configuration only. It does not include a root certificate, VPN, device management enrollment or app installation. You can inspect the XML source on GitHub.
+
+The profile is unsigned. “Unsigned” means it has no distributor signature; this is separate from the DNS connection's TLS encryption. Check the name and DNS addresses on the installation screen before deciding to install.
+
+Public encrypted DNS operated by LibreOps. The standard endpoint does not block ads.
+
+The operator states that DNS daemon logging is disabled and no query logs are kept.
+
+Privacy policy: https://libredns.gr/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>E88F2DDE-273B-557F-93BB-8E53BD0A7D73</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · LibreDNS · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>116.202.176.26</string>
+					<string>2a01:4f8:1c0c:8274::1</string>
+				</array>
+				<key>ServerName</key>
+				<string>dot.libredns.gr</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

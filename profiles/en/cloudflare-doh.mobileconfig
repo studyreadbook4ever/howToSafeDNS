@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>476B3323-0C4E-5141-9086-589F583DF4FF</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Cloudflare · DoH</string>
+	<key>PayloadDescription</key>
+	<string>This file contains a single DNS configuration only. It does not include a root certificate, VPN, device management enrollment or app installation. You can inspect the XML source on GitHub.
+
+The profile is unsigned. “Unsigned” means it has no distributor signature; this is separate from the DNS connection's TLS encryption. Check the name and DNS addresses on the installation screen before deciding to install.
+
+General resolution · No content blocking in the standard service
+
+The provider states that it does not use personal data for advertising targeting or sell it. Limited query and debugging logs are deleted within 25 hours; the policy lists exceptions for some sampled and aggregate data.
+
+Privacy policy: https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>E3BF8166-F8F2-5A77-9201-F80A7BF3F551</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Cloudflare · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>1.1.1.1</string>
+					<string>1.0.0.1</string>
+					<string>2606:4700:4700::1111</string>
+					<string>2606:4700:4700::1001</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://cloudflare-dns.com/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>CD25B95F-DA0D-55B9-97C6-7E0A20BC249F</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · AdGuard DNS · DoT</string>
+	<key>PayloadDescription</key>
+	<string>这个文件只有一项 DNS 设置，不包含根证书、VPN、设备管理注册或应用安装项。可以在 GitHub 查看 XML 原文。
+
+描述文件未签名。“未签名”表示没有发布者签名，与 DNS 连接的 TLS 加密是两回事。请检查安装界面的名称和 DNS 地址后再决定是否安装。
+
+公共默认服务器会拦截广告、跟踪和恶意域名。一些网站或应用的功能也可能受到影响。
+
+AdGuard 明确表示其公共 DNS 不处理个人数据。它会保存不关联用户的使用统计和最近 24 小时的匿名域名数据。
+
+隐私政策: https://adguard-dns.io/en/privacy.html</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>43B710AB-2538-5952-A441-C21BFB5A5B8C</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · AdGuard DNS · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>94.140.14.14</string>
+					<string>94.140.15.15</string>
+					<string>2a10:50c0::ad1:ff</string>
+					<string>2a10:50c0::ad2:ff</string>
+				</array>
+				<key>ServerName</key>
+				<string>dns.adguard-dns.com</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

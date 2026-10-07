@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>CA4A7D34-7D6A-5C43-A87B-82FD3FFB0737</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · LibreDNS · DoT</string>
+	<key>PayloadDescription</key>
+	<string>Ce fichier contient un seul réglage DNS. Il ne contient ni certificat racine, ni VPN, ni inscription à la gestion de l’appareil, ni installation d’application. Vous pouvez consulter le XML original sur GitHub.
+
+Le profil n’est pas signé. « Non signé » signifie qu’il ne porte pas la signature du distributeur ; cela est distinct du chiffrement TLS de la connexion DNS. Vérifiez le nom et l’adresse DNS sur l’écran d’installation avant de décider.
+
+Un DNS chiffré public géré par LibreOps. L’adresse de base ne bloque pas les publicités.
+
+L’opérateur indique désactiver les journaux du démon DNS et ne pas conserver de journaux de requêtes.
+
+Politique de confidentialité: https://libredns.gr/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>5D22C9A3-E434-53D4-907F-F15233B59822</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · LibreDNS · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>116.202.176.26</string>
+					<string>2a01:4f8:1c0c:8274::1</string>
+				</array>
+				<key>ServerName</key>
+				<string>dot.libredns.gr</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>7DE715CF-F6BA-599E-9B03-D51800F43083</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Google Public DNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>이 파일에는 DNS 설정 하나만 들어 있습니다. 루트 인증서, VPN, 기기 관리 등록, 앱 설치 항목은 없습니다. GitHub에서 XML 원문을 확인할 수 있습니다.
+
+프로필은 서명되지 않았습니다. “서명되지 않음”은 배포자 서명이 없다는 뜻이며, DNS 연결의 TLS 암호화와는 별개입니다. 설치 화면의 이름과 DNS 주소를 확인한 뒤 결정하세요.
+
+일반 조회 · 악성 사이트 차단 서비스는 아님
+
+DNS에서 수집한 개인정보를 광고 타기팅에 사용하지 않는다고 밝힙니다. IP와 조회를 포함한 임시 로그는 보통 24–48시간 보관하며, 보안·오남용 대응 예외와 비식별 장기 로그가 있습니다.
+
+개인정보 정책: https://developers.google.com/speed/public-dns/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>57391313-9A90-557F-92A2-7ADD2A80D9EA</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Google Public DNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>8.8.8.8</string>
+					<string>8.8.4.4</string>
+					<string>2001:4860:4860::8888</string>
+					<string>2001:4860:4860::8844</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://dns.google/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

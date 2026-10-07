@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>98F34809-52D5-5831-AF23-72E893330A13</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · LibreDNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>このファイルには、DNS設定が1つだけ含まれています。ルート証明書、VPN、デバイス管理への登録、アプリのインストール項目はありません。GitHubでXMLの内容を確認できます。
+
+プロファイルは署名されていません。「未署名」は配布者の署名がないという意味であり、DNS接続のTLS暗号化とは別のものです。インストール画面の名前とDNSアドレスを確認してから判断してください。
+
+LibreOpsが運営する公開の暗号化DNSです。広告をブロックしない標準のアドレスです。
+
+運営者は、DNSデーモンのログを無効にして、問い合わせログを残さないと説明しています。
+
+プライバシーポリシー: https://libredns.gr/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>A6BC06DC-B9CD-5A4E-956D-8EE4EB1BFDB3</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · LibreDNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>116.202.176.26</string>
+					<string>2a01:4f8:1c0c:8274::1</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://doh.libredns.gr/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

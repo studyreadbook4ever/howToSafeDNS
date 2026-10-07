@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>EFB0A76E-EAAF-5A1A-B041-48F1DE218F35</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · LibreDNS · DoT</string>
+	<key>PayloadDescription</key>
+	<string>这个文件只有一项 DNS 设置，不包含根证书、VPN、设备管理注册或应用安装项。可以在 GitHub 查看 XML 原文。
+
+描述文件未签名。“未签名”表示没有发布者签名，与 DNS 连接的 TLS 加密是两回事。请检查安装界面的名称和 DNS 地址后再决定是否安装。
+
+LibreOps 运营的公共加密 DNS。基础地址不拦截广告。
+
+运营方说明会关闭 DNS 守护进程的日志功能，不保留查询日志。
+
+隐私政策: https://libredns.gr/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>8195CD84-CE24-5F48-81BB-3A3C79784E88</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · LibreDNS · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>116.202.176.26</string>
+					<string>2a01:4f8:1c0c:8274::1</string>
+				</array>
+				<key>ServerName</key>
+				<string>dot.libredns.gr</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>A5B80B24-A632-5BA1-909F-28CEA5CD54FC</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Google Public DNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>В файле есть только одна конфигурация DNS. Он не содержит корневых сертификатов, VPN, регистрации управления устройством или установки приложений. Исходный XML можно посмотреть на GitHub.
+
+Профиль не подписан. «Не подписан» означает отсутствие подписи распространителя; это не связано с TLS-шифрованием DNS-соединения. Прежде чем устанавливать, проверьте имя и DNS-адреса на экране установки.
+
+Обычное разрешение имён · Не сервис блокировки вредоносных сайтов
+
+Провайдер заявляет, что личные данные, собранные через DNS, не используются для таргетированной рекламы. Временные журналы с IP-адресами и запросами обычно хранятся 24–48 часов; есть исключения для безопасности и борьбы со злоупотреблениями, а также долгосрочные обезличенные журналы.
+
+Политика конфиденциальности: https://developers.google.com/speed/public-dns/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>407337FA-E206-5C47-BDA3-C6BC6DE9C1B3</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Google Public DNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>8.8.8.8</string>
+					<string>8.8.4.4</string>
+					<string>2001:4860:4860::8888</string>
+					<string>2001:4860:4860::8844</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://dns.google/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

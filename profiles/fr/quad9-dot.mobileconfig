@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>13E2F2CC-E9AF-554E-85DD-B1D763087332</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Quad9 · DoT</string>
+	<key>PayloadDescription</key>
+	<string>Ce fichier contient un seul réglage DNS. Il ne contient ni certificat racine, ni VPN, ni inscription à la gestion de l’appareil, ni installation d’application. Vous pouvez consulter le XML original sur GitHub.
+
+Le profil n’est pas signé. « Non signé » signifie qu’il ne porte pas la signature du distributeur ; cela est distinct du chiffrement TLS de la connexion DNS. Vérifiez le nom et l’adresse DNS sur l’écran d’installation avant de décider.
+
+Ce service gratuit bloque les domaines classés comme menaçants. Une erreur de classification peut aussi empêcher l’ouverture de sites légitimes.
+
+Quad9 indique ne pas collecter ni enregistrer l’IP des utilisateurs. Des données agrégées et des statistiques sur les domaines non liées à une personne sont toutefois traitées ; cela ne signifie pas qu’aucune donnée n’est stockée.
+
+Politique de confidentialité: https://quad9.net/privacy/policy/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>9191070C-F1D5-51AE-BD62-5830444E0B06</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Quad9 · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>9.9.9.9</string>
+					<string>149.112.112.112</string>
+					<string>2620:fe::fe</string>
+					<string>2620:fe::9</string>
+				</array>
+				<key>ServerName</key>
+				<string>dns.quad9.net</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

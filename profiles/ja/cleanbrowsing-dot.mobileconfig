@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>C19506DC-B02A-509A-9B76-97B290DE6DC8</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · CleanBrowsing · DoT</string>
+	<key>PayloadDescription</key>
+	<string>このファイルには、DNS設定が1つだけ含まれています。ルート証明書、VPN、デバイス管理への登録、アプリのインストール項目はありません。GitHubでXMLの内容を確認できます。
+
+プロファイルは署名されていません。「未署名」は配布者の署名がないという意味であり、DNS接続のTLS暗号化とは別のものです。インストール画面の名前とDNSアドレスを確認してから判断してください。
+
+無料のSecurityフィルターは、フィッシング、スパム、悪意のあるドメインをブロックします。アダルトコンテンツ用のフィルターではなく、正常なサイトが誤ってブロックされる場合もあります。
+
+CleanBrowsingは、無料DNSではIPアドレスなど、問い合わせを個人に関連付けられる識別情報を記録・保存しないと明記しています。匿名の集計DNSデータは、サービスの運用で処理します。
+
+プライバシーポリシー: https://cleanbrowsing.org/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>35E8470A-B76D-5490-AB14-3F905DE660EB</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · CleanBrowsing · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>185.228.168.9</string>
+					<string>185.228.169.9</string>
+					<string>2a0d:2a00:1::2</string>
+					<string>2a0d:2a00:2::2</string>
+				</array>
+				<key>ServerName</key>
+				<string>security-filter-dns.cleanbrowsing.org</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>143D5D63-2A0A-54EA-98CD-36A6BFF6DEC1</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Google Public DNS · DoT</string>
+	<key>PayloadDescription</key>
+	<string>这个文件只有一项 DNS 设置，不包含根证书、VPN、设备管理注册或应用安装项。可以在 GitHub 查看 XML 原文。
+
+描述文件未签名。“未签名”表示没有发布者签名，与 DNS 连接的 TLS 加密是两回事。请检查安装界面的名称和 DNS 地址后再决定是否安装。
+
+普通查询 · 不属于恶意网站拦截服务
+
+服务商声明不会将 DNS 收集的个人信息用于广告定向。包含 IP 和查询的临时日志通常保存 24–48 小时；同时存在安全、滥用防范方面的例外，以及长期保存的去标识化日志。
+
+隐私政策: https://developers.google.com/speed/public-dns/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>696CE41F-E832-5749-A4AE-F923B323560B</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Google Public DNS · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>8.8.8.8</string>
+					<string>8.8.4.4</string>
+					<string>2001:4860:4860::8888</string>
+					<string>2001:4860:4860::8844</string>
+				</array>
+				<key>ServerName</key>
+				<string>dns.google</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

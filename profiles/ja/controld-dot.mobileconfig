@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>6B380D4B-BB17-5F5D-B917-F78D6E1242C4</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Control D · DoT</string>
+	<key>PayloadDescription</key>
+	<string>このファイルには、DNS設定が1つだけ含まれています。ルート証明書、VPN、デバイス管理への登録、アプリのインストール項目はありません。GitHubでXMLの内容を確認できます。
+
+プロファイルは署名されていません。「未署名」は配布者の署名がないという意味であり、DNS接続のTLS暗号化とは別のものです。インストール画面の名前とDNSアドレスを確認してから判断してください。
+
+無料の悪意のあるドメイン用フィルターです。以下のIPアドレスは暗号化接続用で、平文DNS用のアドレスとは異なります。正常なドメインが誤ってブロックされる場合もあります。
+
+Control Dの無料DNSドキュメントでは、個々の閲覧履歴、タイムスタンプ、問い合わせログを保存しないと明記しています。有料アカウントとウェブサイトには、別のプライバシーポリシーが適用されます。
+
+プライバシーポリシー: https://controld.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>0F608701-F8E8-5E77-A981-3086877E1434</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Control D · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>76.76.2.11</string>
+					<string>76.76.10.11</string>
+					<string>2606:1a40::11</string>
+					<string>2606:1a40:1::11</string>
+				</array>
+				<key>ServerName</key>
+				<string>p1.freedns.controld.com</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

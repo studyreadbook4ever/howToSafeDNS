@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>C5E6229C-64B9-5EBD-986C-39B427A2F126</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · AdGuard DNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>This file contains a single DNS configuration only. It does not include a root certificate, VPN, device management enrollment or app installation. You can inspect the XML source on GitHub.
+
+The profile is unsigned. “Unsigned” means it has no distributor signature; this is separate from the DNS connection's TLS encryption. Check the name and DNS addresses on the installation screen before deciding to install.
+
+The default public servers block advertising, tracking and malicious domains. Some website or app features may also stop working.
+
+AdGuard states that it does not process personal data in its public DNS service. It stores usage statistics not linked to users and anonymous domain data from the last 24 hours.
+
+Privacy policy: https://adguard-dns.io/en/privacy.html</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>75BD9A36-190D-5D67-BB6E-F9511F6926AD</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · AdGuard DNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>94.140.14.14</string>
+					<string>94.140.15.15</string>
+					<string>2a10:50c0::ad1:ff</string>
+					<string>2a10:50c0::ad2:ff</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://dns.adguard-dns.com/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

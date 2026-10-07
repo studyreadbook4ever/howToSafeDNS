@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>BF013515-1EC1-52DE-82BF-24912D22EC79</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · LibreDNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>Ce fichier contient un seul réglage DNS. Il ne contient ni certificat racine, ni VPN, ni inscription à la gestion de l’appareil, ni installation d’application. Vous pouvez consulter le XML original sur GitHub.
+
+Le profil n’est pas signé. « Non signé » signifie qu’il ne porte pas la signature du distributeur ; cela est distinct du chiffrement TLS de la connexion DNS. Vérifiez le nom et l’adresse DNS sur l’écran d’installation avant de décider.
+
+Un DNS chiffré public géré par LibreOps. L’adresse de base ne bloque pas les publicités.
+
+L’opérateur indique désactiver les journaux du démon DNS et ne pas conserver de journaux de requêtes.
+
+Politique de confidentialité: https://libredns.gr/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>7A1985E6-4FFD-5AD6-8049-945D6F687AF1</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · LibreDNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>116.202.176.26</string>
+					<string>2a01:4f8:1c0c:8274::1</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://doh.libredns.gr/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

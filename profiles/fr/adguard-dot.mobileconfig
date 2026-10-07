@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>E285AB08-A7DA-595B-83C8-07FC8C54DE4A</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · AdGuard DNS · DoT</string>
+	<key>PayloadDescription</key>
+	<string>Ce fichier contient un seul réglage DNS. Il ne contient ni certificat racine, ni VPN, ni inscription à la gestion de l’appareil, ni installation d’application. Vous pouvez consulter le XML original sur GitHub.
+
+Le profil n’est pas signé. « Non signé » signifie qu’il ne porte pas la signature du distributeur ; cela est distinct du chiffrement TLS de la connexion DNS. Vérifiez le nom et l’adresse DNS sur l’écran d’installation avant de décider.
+
+Les serveurs publics par défaut bloquent les publicités, les traceurs et les domaines malveillants. Certaines fonctions de sites ou d’applications peuvent également être bloquées.
+
+AdGuard indique ne pas traiter de données personnelles sur son DNS public. Des statistiques d’utilisation non liées aux utilisateurs et des données anonymes sur les domaines des dernières 24 heures sont conservées.
+
+Politique de confidentialité: https://adguard-dns.io/en/privacy.html</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>BC4E6903-8404-56CC-BECE-15BF1F26544E</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · AdGuard DNS · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>94.140.14.14</string>
+					<string>94.140.15.15</string>
+					<string>2a10:50c0::ad1:ff</string>
+					<string>2a10:50c0::ad2:ff</string>
+				</array>
+				<key>ServerName</key>
+				<string>dns.adguard-dns.com</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

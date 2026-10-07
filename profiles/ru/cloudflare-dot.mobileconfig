@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>E4BFA3DC-D2D6-5CA6-9FDF-1533D88907A2</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Cloudflare · DoT</string>
+	<key>PayloadDescription</key>
+	<string>В файле есть только одна конфигурация DNS. Он не содержит корневых сертификатов, VPN, регистрации управления устройством или установки приложений. Исходный XML можно посмотреть на GitHub.
+
+Профиль не подписан. «Не подписан» означает отсутствие подписи распространителя; это не связано с TLS-шифрованием DNS-соединения. Прежде чем устанавливать, проверьте имя и DNS-адреса на экране установки.
+
+Обычное разрешение имён · В базовом сервисе нет блокировки контента
+
+Провайдер заявляет, что не использует личные данные для таргетированной рекламы и не продаёт их. Ограниченные журналы запросов и отладки удаляются в течение 25 часов; политика указывает исключения для части выборочных и агрегированных данных.
+
+Политика конфиденциальности: https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>F254D503-3673-5728-B411-0C1EA28F6B27</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Cloudflare · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>1.1.1.1</string>
+					<string>1.0.0.1</string>
+					<string>2606:4700:4700::1111</string>
+					<string>2606:4700:4700::1001</string>
+				</array>
+				<key>ServerName</key>
+				<string>one.one.one.one</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

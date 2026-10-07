@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>6AFD4DF3-3321-5F16-94AF-8A56308FFE6B</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · DNS4EU · DoT</string>
+	<key>PayloadDescription</key>
+	<string>이 파일에는 DNS 설정 하나만 들어 있습니다. 루트 인증서, VPN, 기기 관리 등록, 앱 설치 항목은 없습니다. GitHub에서 XML 원문을 확인할 수 있습니다.
+
+프로필은 서명되지 않았습니다. “서명되지 않음”은 배포자 서명이 없다는 뜻이며, DNS 연결의 TLS 암호화와는 별개입니다. 설치 화면의 이름과 DNS 주소를 확인한 뒤 결정하세요.
+
+유럽 개인 이용자를 위한 무료 보호용 DNS입니다. 악성·피싱·명령제어 도메인과 법원 명령에 따른 도메인을 차단합니다. 한국에서는 연결과 지연을 확인하세요.
+
+DNS4EU는 클라이언트 IP를 완전히 익명화한 뒤 기록하고, 조회를 판매·프로파일링·광고 타기팅에 사용하지 않는다고 명시합니다. 로그 자체가 없다는 뜻은 아닙니다.
+
+개인정보 정책: https://legal-documents-dns4eu.s3.fr-par.scw.cloud/DNS4EU-Public-DNS-Resolver-policy-2025.pdf</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>0CF1196B-1919-578E-9525-7E0DFAABC93C</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · DNS4EU · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>86.54.11.1</string>
+					<string>86.54.11.201</string>
+					<string>2a13:1001::86:54:11:1</string>
+					<string>2a13:1001::86:54:11:201</string>
+				</array>
+				<key>ServerName</key>
+				<string>protective.joindns4.eu</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

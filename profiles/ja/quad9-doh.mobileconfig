@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>3D4838B4-1CDB-587A-9E7A-14F465AC0D09</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Quad9 · DoH</string>
+	<key>PayloadDescription</key>
+	<string>このファイルには、DNS設定が1つだけ含まれています。ルート証明書、VPN、デバイス管理への登録、アプリのインストール項目はありません。GitHubでXMLの内容を確認できます。
+
+プロファイルは署名されていません。「未署名」は配布者の署名がないという意味であり、DNS接続のTLS暗号化とは別のものです。インストール画面の名前とDNSアドレスを確認してから判断してください。
+
+脅威と分類したドメインをブロックする無料サービスです。ブロックの判定が誤っている場合、正常なサイトも開かなくなることがあります。
+
+Quad9はユーザーのIPアドレスを収集・記録しないと明記しています。個人に関連付けない集計データやドメインの統計は処理するため、「一切のデータを保存しない」という意味ではありません。
+
+プライバシーポリシー: https://quad9.net/privacy/policy/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>92AAFB23-EECC-5FC4-BB31-F71307DC9F5C</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Quad9 · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>9.9.9.9</string>
+					<string>149.112.112.112</string>
+					<string>2620:fe::fe</string>
+					<string>2620:fe::9</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://dns.quad9.net/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

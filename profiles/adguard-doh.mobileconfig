@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>516F6E9D-B1FD-5CD6-B067-2B872FB0D30D</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · AdGuard DNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>이 파일에는 DNS 설정 하나만 들어 있습니다. 루트 인증서, VPN, 기기 관리 등록, 앱 설치 항목은 없습니다. GitHub에서 XML 원문을 확인할 수 있습니다.
+
+프로필은 서명되지 않았습니다. “서명되지 않음”은 배포자 서명이 없다는 뜻이며, DNS 연결의 TLS 암호화와는 별개입니다. 설치 화면의 이름과 DNS 주소를 확인한 뒤 결정하세요.
+
+공개 기본 서버는 광고·추적·악성 도메인을 차단합니다. 일부 사이트나 앱의 기능이 함께 막힐 수 있습니다.
+
+AdGuard는 공개 DNS에서 개인 데이터를 처리하지 않는다고 명시합니다. 사용자와 연결하지 않는 사용 통계와 최근 24시간의 익명 도메인 데이터는 저장합니다.
+
+개인정보 정책: https://adguard-dns.io/en/privacy.html</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>2A285F9D-6572-5312-AC52-0B2527219397</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · AdGuard DNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>94.140.14.14</string>
+					<string>94.140.15.15</string>
+					<string>2a10:50c0::ad1:ff</string>
+					<string>2a10:50c0::ad2:ff</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://dns.adguard-dns.com/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

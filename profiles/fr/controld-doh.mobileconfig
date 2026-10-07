@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>5BA608B7-9F55-57B3-99EA-45752E443CA4</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Control D · DoH</string>
+	<key>PayloadDescription</key>
+	<string>Ce fichier contient un seul réglage DNS. Il ne contient ni certificat racine, ni VPN, ni inscription à la gestion de l’appareil, ni installation d’application. Vous pouvez consulter le XML original sur GitHub.
+
+Le profil n’est pas signé. « Non signé » signifie qu’il ne porte pas la signature du distributeur ; cela est distinct du chiffrement TLS de la connexion DNS. Vérifiez le nom et l’adresse DNS sur l’écran d’installation avant de décider.
+
+Un filtre gratuit de domaines malveillants. Les IP ci-dessous servent aux connexions chiffrées et diffèrent des adresses du DNS en clair. Des domaines légitimes peuvent être bloqués par erreur.
+
+La documentation du DNS gratuit de Control D indique ne pas conserver d’historique individuel de navigation, d’horodatages ni de journaux de requêtes. Les comptes payants et le site web sont soumis à une politique de confidentialité distincte.
+
+Politique de confidentialité: https://controld.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>257A2EEC-DDC5-5949-B235-6813412B6D7E</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Control D · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>76.76.2.11</string>
+					<string>76.76.10.11</string>
+					<string>2606:1a40::11</string>
+					<string>2606:1a40:1::11</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://freedns.controld.com/p1</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

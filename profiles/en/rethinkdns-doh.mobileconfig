@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>8636EA42-1595-5AAF-B41B-C0F155D67A1C</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · RethinkDNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>This file contains a single DNS configuration only. It does not include a root certificate, VPN, device management enrollment or app installation. You can inspect the XML source on GitHub.
+
+The profile is unsigned. “Unsigned” means it has no distributor signature; this is separate from the DNS connection's TLS encryption. Check the name and DNS addresses on the installation screen before deciding to install.
+
+Public encrypted DNS requiring no account. The max endpoint runs on Fly.io.
+
+The operator states that DNS query logs are not stored by default. Logging and analytics explicitly enabled by paying users are exceptions, and the hosting provider's policies also apply.
+
+Privacy policy: https://rethinkdns.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>D8C195D1-58A6-5D0D-8139-37BB88C50000</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · RethinkDNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://max.rethinkdns.com/</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

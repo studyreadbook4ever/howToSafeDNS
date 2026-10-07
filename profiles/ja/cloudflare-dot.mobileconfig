@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>62BA6917-2FF3-52FC-9A0F-A431310BB93A</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Cloudflare · DoT</string>
+	<key>PayloadDescription</key>
+	<string>このファイルには、DNS設定が1つだけ含まれています。ルート証明書、VPN、デバイス管理への登録、アプリのインストール項目はありません。GitHubでXMLの内容を確認できます。
+
+プロファイルは署名されていません。「未署名」は配布者の署名がないという意味であり、DNS接続のTLS暗号化とは別のものです。インストール画面の名前とDNSアドレスを確認してから判断してください。
+
+一般的な問い合わせ・標準サービスにコンテンツのブロックはありません
+
+個人情報を広告ターゲティングに使用したり、販売したりしないとしています。限定的な問い合わせ・デバッグログは25時間以内に削除され、一部のサンプルや集計についての例外がポリシーに記載されています。
+
+プライバシーポリシー: https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>B622000C-4682-587B-BAAE-CFD91E9FA45F</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Cloudflare · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>1.1.1.1</string>
+					<string>1.0.0.1</string>
+					<string>2606:4700:4700::1111</string>
+					<string>2606:4700:4700::1001</string>
+				</array>
+				<key>ServerName</key>
+				<string>one.one.one.one</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

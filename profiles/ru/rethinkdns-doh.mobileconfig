@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>E5F74F81-3DA2-5B88-B4E1-1B780285CAC8</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · RethinkDNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>В файле есть только одна конфигурация DNS. Он не содержит корневых сертификатов, VPN, регистрации управления устройством или установки приложений. Исходный XML можно посмотреть на GitHub.
+
+Профиль не подписан. «Не подписан» означает отсутствие подписи распространителя; это не связано с TLS-шифрованием DNS-соединения. Прежде чем устанавливать, проверьте имя и DNS-адреса на экране установки.
+
+Публичный шифрованный DNS без аккаунта. Адрес max работает на Fly.io.
+
+Оператор сообщает, что по умолчанию журналы DNS-запросов не сохраняются. Исключения — отдельно включённые платными пользователями журналирование и аналитика; также действуют политики хостинг-провайдера.
+
+Политика конфиденциальности: https://rethinkdns.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>67A4B311-7C72-5401-8CCB-5BDFD996B098</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · RethinkDNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://max.rethinkdns.com/</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

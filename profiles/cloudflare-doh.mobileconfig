@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>61625B12-283B-58BA-9010-FD07F01AC429</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Cloudflare · DoH</string>
+	<key>PayloadDescription</key>
+	<string>이 파일에는 DNS 설정 하나만 들어 있습니다. 루트 인증서, VPN, 기기 관리 등록, 앱 설치 항목은 없습니다. GitHub에서 XML 원문을 확인할 수 있습니다.
+
+프로필은 서명되지 않았습니다. “서명되지 않음”은 배포자 서명이 없다는 뜻이며, DNS 연결의 TLS 암호화와는 별개입니다. 설치 화면의 이름과 DNS 주소를 확인한 뒤 결정하세요.
+
+일반 조회 · 기본 서비스에는 콘텐츠 차단 없음
+
+개인정보를 광고 타기팅에 사용하거나 판매하지 않는다고 밝힙니다. 제한된 조회·디버그 로그는 25시간 이내 삭제하며 일부 표본·집계 예외는 정책에 명시되어 있습니다.
+
+개인정보 정책: https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>1DAE1141-A6C3-538D-A905-F3BA4C15B6D1</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Cloudflare · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>1.1.1.1</string>
+					<string>1.0.0.1</string>
+					<string>2606:4700:4700::1111</string>
+					<string>2606:4700:4700::1001</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://cloudflare-dns.com/dns-query</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

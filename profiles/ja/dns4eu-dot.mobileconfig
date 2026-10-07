@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>E7B1149D-8709-58BD-9640-C963E70823DB</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · DNS4EU · DoT</string>
+	<key>PayloadDescription</key>
+	<string>このファイルには、DNS設定が1つだけ含まれています。ルート証明書、VPN、デバイス管理への登録、アプリのインストール項目はありません。GitHubでXMLの内容を確認できます。
+
+プロファイルは署名されていません。「未署名」は配布者の署名がないという意味であり、DNS接続のTLS暗号化とは別のものです。インストール画面の名前とDNSアドレスを確認してから判断してください。
+
+ヨーロッパの個人ユーザー向けの、無料の保護機能付きDNSです。悪意のあるドメイン、フィッシング、指令・制御用のドメインと、裁判所の命令に基づくドメインをブロックします。韓国から使う場合は、接続と遅延を確認してください。
+
+DNS4EUは、クライアントIPアドレスを完全に匿名化してから記録し、問い合わせを販売、プロファイリング、広告ターゲティングに使用しないと明記しています。ログそのものが存在しないという意味ではありません。
+
+プライバシーポリシー: https://legal-documents-dns4eu.s3.fr-par.scw.cloud/DNS4EU-Public-DNS-Resolver-policy-2025.pdf</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>FAF318C7-E2BA-5FF0-8232-3E017A7F88A8</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · DNS4EU · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>86.54.11.1</string>
+					<string>86.54.11.201</string>
+					<string>2a13:1001::86:54:11:1</string>
+					<string>2a13:1001::86:54:11:201</string>
+				</array>
+				<key>ServerName</key>
+				<string>protective.joindns4.eu</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>61F72773-4946-5646-8125-9FD65EE0E516</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · RethinkDNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>Ce fichier contient un seul réglage DNS. Il ne contient ni certificat racine, ni VPN, ni inscription à la gestion de l’appareil, ni installation d’application. Vous pouvez consulter le XML original sur GitHub.
+
+Le profil n’est pas signé. « Non signé » signifie qu’il ne porte pas la signature du distributeur ; cela est distinct du chiffrement TLS de la connexion DNS. Vérifiez le nom et l’adresse DNS sur l’écran d’installation avant de décider.
+
+Un DNS chiffré public utilisable sans compte. L’adresse max est hébergée sur Fly.io.
+
+L’opérateur indique ne pas conserver de journaux de requêtes DNS par défaut. Les fonctions de journalisation et d’analyse activées séparément par les utilisateurs payants font exception, et les politiques des hébergeurs s’appliquent également.
+
+Politique de confidentialité: https://rethinkdns.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>F776C1AA-09D9-5C55-8A56-8FA99C28237D</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · RethinkDNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://max.rethinkdns.com/</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

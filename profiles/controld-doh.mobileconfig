@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>567DF914-12CD-55FB-9F07-5CE338B77EAF</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Control D · DoH</string>
+	<key>PayloadDescription</key>
+	<string>이 파일에는 DNS 설정 하나만 들어 있습니다. 루트 인증서, VPN, 기기 관리 등록, 앱 설치 항목은 없습니다. GitHub에서 XML 원문을 확인할 수 있습니다.
+
+프로필은 서명되지 않았습니다. “서명되지 않음”은 배포자 서명이 없다는 뜻이며, DNS 연결의 TLS 암호화와는 별개입니다. 설치 화면의 이름과 DNS 주소를 확인한 뒤 결정하세요.
+
+무료 악성 도메인 필터입니다. 아래 IP는 암호화 연결용이며 평문 DNS용 주소와 다릅니다. 정상 도메인이 잘못 차단될 수도 있습니다.
+
+Control D의 무료 DNS 문서는 개별 방문 기록·타임스탬프·조회 로그를 저장하지 않는다고 명시합니다. 유료 계정과 웹사이트에는 별도의 개인정보 정책이 적용됩니다.
+
+개인정보 정책: https://controld.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>47CD86E1-FC49-5E8C-9485-88791AAED730</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Control D · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>76.76.2.11</string>
+					<string>76.76.10.11</string>
+					<string>2606:1a40::11</string>
+					<string>2606:1a40:1::11</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://freedns.controld.com/p1</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

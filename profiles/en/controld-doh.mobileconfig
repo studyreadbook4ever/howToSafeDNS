@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>984B3F37-3B34-5CE9-BA37-078DC5D9C521</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · Control D · DoH</string>
+	<key>PayloadDescription</key>
+	<string>This file contains a single DNS configuration only. It does not include a root certificate, VPN, device management enrollment or app installation. You can inspect the XML source on GitHub.
+
+The profile is unsigned. “Unsigned” means it has no distributor signature; this is separate from the DNS connection's TLS encryption. Check the name and DNS addresses on the installation screen before deciding to install.
+
+A free malicious-domain filter. The IP addresses below are for encrypted connections and differ from its plaintext DNS addresses. Legitimate domains may also be blocked incorrectly.
+
+Control D's free DNS documentation states that it does not store individual browsing histories, timestamps or query logs. Paid accounts and the website have separate privacy policies.
+
+Privacy policy: https://controld.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>E161CE5F-0E04-570C-A4AA-BD4756A9EBF5</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · Control D · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>76.76.2.11</string>
+					<string>76.76.10.11</string>
+					<string>2606:1a40::11</string>
+					<string>2606:1a40:1::11</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://freedns.controld.com/p1</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

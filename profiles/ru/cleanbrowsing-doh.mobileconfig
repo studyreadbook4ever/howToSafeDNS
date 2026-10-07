@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>23BE00C8-8EAD-5650-85F9-1661203899C9</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · CleanBrowsing · DoH</string>
+	<key>PayloadDescription</key>
+	<string>В файле есть только одна конфигурация DNS. Он не содержит корневых сертификатов, VPN, регистрации управления устройством или установки приложений. Исходный XML можно посмотреть на GitHub.
+
+Профиль не подписан. «Не подписан» означает отсутствие подписи распространителя; это не связано с TLS-шифрованием DNS-соединения. Прежде чем устанавливать, проверьте имя и DNS-адреса на экране установки.
+
+Бесплатный фильтр Security блокирует фишинг, спам и вредоносные домены. Он не фильтрует контент для взрослых; безопасные сайты тоже могут блокироваться ошибочно.
+
+CleanBrowsing заявляет, что бесплатный DNS не записывает и не сохраняет идентифицирующие сведения, например IP-адреса, позволяющие связать запрос с человеком. Для работы сервиса обрабатываются анонимные агрегированные DNS-данные.
+
+Политика конфиденциальности: https://cleanbrowsing.org/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>A9DFAD81-C33C-56C5-BA4C-DDCEFAAFF696</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · CleanBrowsing · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>185.228.168.9</string>
+					<string>185.228.169.9</string>
+					<string>2a0d:2a00:1::2</string>
+					<string>2a0d:2a00:2::2</string>
+				</array>
+				<key>ServerURL</key>
+				<string>https://doh.cleanbrowsing.org/doh/security-filter/</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

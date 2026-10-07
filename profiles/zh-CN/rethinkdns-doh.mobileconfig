@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>8A2EF9D1-A7D8-5233-9E12-C82DC6C69DD6</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · RethinkDNS · DoH</string>
+	<key>PayloadDescription</key>
+	<string>这个文件只有一项 DNS 设置，不包含根证书、VPN、设备管理注册或应用安装项。可以在 GitHub 查看 XML 原文。
+
+描述文件未签名。“未签名”表示没有发布者签名，与 DNS 连接的 TLS 加密是两回事。请检查安装界面的名称和 DNS 地址后再决定是否安装。
+
+无需账户即可使用的公共加密 DNS。max 地址运行在 Fly.io 上。
+
+运营方说明默认不保存 DNS 查询日志。付费用户另行开启的日志和分析功能属于例外，同时也适用托管服务商的政策。
+
+隐私政策: https://rethinkdns.com/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>37D945F3-C4DB-5FC8-83DC-118D75C587FC</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · RethinkDNS · DoH</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://max.rethinkdns.com/</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

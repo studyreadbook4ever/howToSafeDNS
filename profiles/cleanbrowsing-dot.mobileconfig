@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadIdentifier</key>
+	<string>io.github.studyreadbook4ever.howToSafeDNS</string>
+	<key>PayloadUUID</key>
+	<string>26509E3E-E0F1-50EE-B229-A3B9C2D13CFF</string>
+	<key>PayloadDisplayName</key>
+	<string>howToSafeDNS · CleanBrowsing · DoT</string>
+	<key>PayloadDescription</key>
+	<string>이 파일에는 DNS 설정 하나만 들어 있습니다. 루트 인증서, VPN, 기기 관리 등록, 앱 설치 항목은 없습니다. GitHub에서 XML 원문을 확인할 수 있습니다.
+
+프로필은 서명되지 않았습니다. “서명되지 않음”은 배포자 서명이 없다는 뜻이며, DNS 연결의 TLS 암호화와는 별개입니다. 설치 화면의 이름과 DNS 주소를 확인한 뒤 결정하세요.
+
+무료 Security 필터는 피싱·스팸·악성 도메인을 차단합니다. 성인 콘텐츠 필터는 아니며 정상 사이트가 잘못 차단될 수도 있습니다.
+
+CleanBrowsing은 무료 DNS에서 조회를 개인에게 연결할 수 있는 IP 등 식별 정보를 기록·저장하지 않는다고 명시합니다. 익명 집계 DNS 데이터는 서비스 운영에 처리합니다.
+
+개인정보 정책: https://cleanbrowsing.org/privacy</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>io.github.studyreadbook4ever.howToSafeDNS.dns</string>
+			<key>PayloadUUID</key>
+			<string>4D859B02-114E-5E09-B23C-7E8F69B4ADEA</string>
+			<key>PayloadDisplayName</key>
+			<string>howToSafeDNS · CleanBrowsing · DoT</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>185.228.168.9</string>
+					<string>185.228.169.9</string>
+					<string>2a0d:2a00:1::2</string>
+					<string>2a0d:2a00:2::2</string>
+				</array>
+				<key>ServerName</key>
+				<string>security-filter-dns.cleanbrowsing.org</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
